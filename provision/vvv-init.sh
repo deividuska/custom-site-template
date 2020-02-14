@@ -194,7 +194,7 @@ else
   echo " * Install type is '${WP_TYPE}'"
   # Install and configure the latest stable version of WordPress
   if [[ ! -f "${VVV_PATH_TO_SITE}/public_html/wp-load.php" ]]; then
-    download_wordpress "${VVV_PATH_TO_SITE}/public_html" "${WP_VERSION}" "${WP_LOCALE}"
+    download_wordpress "${VVV_PATH_TO_SITE}/public_html/wp" "${WP_VERSION}" "${WP_LOCALE}"
   fi
 
   if [[ ! -f "${VVV_PATH_TO_SITE}/public_html/wp-config.php" ]]; then
